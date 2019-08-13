@@ -3,9 +3,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ksc/ksc-sdk-go/ksc"
-	"github.com/ksc/ksc-sdk-go/ksc/utils"
-	"github.com/ksc/ksc-sdk-go/service/sqlserver"
+
+	"github.com/thinry/ksc-sdk-go/ksc"
+	"github.com/thinry/ksc-sdk-go/ksc/utils"
+	"github.com/thinry/ksc-sdk-go/service/sqlserver"
 )
 
 func main() {
@@ -16,7 +17,7 @@ func main() {
 	sk := "OAeYHxiil7rl7nbVcpsUPnbvzJEkY6zQM4ExOR4aOYUx4SZhwLqrKnlaCETVyVv7gw=="
 	region := "cn-shanghai-3"
 	//debug模式的话 打开这个开关
-	ss := sqlserver.SdkNew(ksc.NewClient(ak, sk ,true), &ksc.Config{Region: &region}, &utils.UrlInfo{
+	ss := sqlserver.SdkNew(ksc.NewClient(ak, sk, true), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: false,
 		Locate: false,
 	})
@@ -24,7 +25,7 @@ func main() {
 	var err error
 
 	describeAddresses := make(map[string]interface{})
-	describeAddresses["DBInstanceStatus"]="active"
+	describeAddresses["DBInstanceStatus"] = "active"
 	resp, err = ss.DescribeDBInstances(&describeAddresses)
 	fmt.Println(resp)
 	if err != nil {

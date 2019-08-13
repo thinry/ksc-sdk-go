@@ -1,13 +1,14 @@
 package kscquery
 
 import (
-	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol/query/queryutil"
-	"github.com/ksc/ksc-sdk-go/ksc/kscbody"
 	"net/url"
 	"reflect"
 	"strings"
+
+	"github.com/aws/aws-sdk-go/aws/awserr"
+	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/aws/aws-sdk-go/private/protocol/query/queryutil"
+	"github.com/thinry/ksc-sdk-go/ksc/kscbody"
 )
 
 // BuildHandler is a named request handler for building query protocol requests
@@ -44,11 +45,10 @@ func Build(r *request.Request) {
 		r.SetBufferBody([]byte(body.Encode()))
 		return
 	}
-	if len(v)>0{
-		r.Error = awserr.New("SerializationError", "not support such content-type",nil)
+	if len(v) > 0 {
+		r.Error = awserr.New("SerializationError", "not support such content-type", nil)
 		return
 	}
-
 
 	r.HTTPRequest.URL.RawQuery = body.Encode()
 }

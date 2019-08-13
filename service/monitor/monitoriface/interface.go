@@ -11,7 +11,7 @@ package monitoriface
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/ksc/ksc-sdk-go/service/monitor"
+	"github.com/thinry/ksc-sdk-go/service/monitor"
 )
 
 // MonitorAPI provides an interface to enable mocking the

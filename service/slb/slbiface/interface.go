@@ -11,7 +11,7 @@ package slbiface
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/ksc/ksc-sdk-go/service/slb"
+	"github.com/thinry/ksc-sdk-go/service/slb"
 )
 
 // SlbAPI provides an interface to enable mocking the

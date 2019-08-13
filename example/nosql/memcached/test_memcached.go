@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/ksc/ksc-sdk-go/example/nosql"
-	"github.com/ksc/ksc-sdk-go/ksc"
-	"github.com/ksc/ksc-sdk-go/ksc/utils"
-	"github.com/ksc/ksc-sdk-go/service/memcached"
+	"github.com/thinry/ksc-sdk-go/example/nosql"
+	"github.com/thinry/ksc-sdk-go/ksc"
+	"github.com/thinry/ksc-sdk-go/ksc/utils"
+	"github.com/thinry/ksc-sdk-go/service/memcached"
 )
 
 var m *memcached.Memcached

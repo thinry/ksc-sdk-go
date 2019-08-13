@@ -7,10 +7,10 @@ import (
 	"github.com/aws/aws-sdk-go/aws/client"
 	"github.com/aws/aws-sdk-go/aws/client/metadata"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/aws/signer/v4"
-	"github.com/ksc/ksc-sdk-go/ksc"
-	"github.com/ksc/ksc-sdk-go/ksc/kscquery"
-	"github.com/ksc/ksc-sdk-go/ksc/utils"
+	v4 "github.com/aws/aws-sdk-go/aws/signer/v4"
+	"github.com/thinry/ksc-sdk-go/ksc"
+	"github.com/thinry/ksc-sdk-go/ksc/kscquery"
+	"github.com/thinry/ksc-sdk-go/ksc/utils"
 )
 
 // Ksms provides the API operation methods for making requests to

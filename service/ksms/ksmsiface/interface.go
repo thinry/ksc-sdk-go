@@ -11,7 +11,7 @@ package ksmsiface
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/ksc/ksc-sdk-go/service/ksms"
+	"github.com/thinry/ksc-sdk-go/service/ksms"
 )
 
 // KsmsAPI provides an interface to enable mocking the

@@ -11,7 +11,7 @@ package monitorv1iface
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/ksc/ksc-sdk-go/service/monitorv1"
+	"github.com/thinry/ksc-sdk-go/service/monitorv1"
 )
 
 // Monitorv1API provides an interface to enable mocking the

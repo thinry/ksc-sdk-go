@@ -11,7 +11,7 @@ package memcachediface
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/ksc/ksc-sdk-go/service/memcached"
+	"github.com/thinry/ksc-sdk-go/service/memcached"
 )
 
 // MemcachedAPI provides an interface to enable mocking the

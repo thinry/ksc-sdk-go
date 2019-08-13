@@ -2,13 +2,14 @@ package kscjson
 
 import (
 	"encoding/json"
-	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol/query/queryutil"
-	"github.com/ksc/ksc-sdk-go/ksc/kscbody"
 	"net/url"
 	"reflect"
 	"strings"
+
+	"github.com/aws/aws-sdk-go/aws/awserr"
+	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/aws/aws-sdk-go/private/protocol/query/queryutil"
+	"github.com/thinry/ksc-sdk-go/ksc/kscbody"
 )
 
 var BuildHandler = request.NamedHandler{Name: "kscsdk.kscjson.Build", Fn: Build}

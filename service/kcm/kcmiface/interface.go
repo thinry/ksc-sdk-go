@@ -11,7 +11,7 @@ package kcmiface
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/ksc/ksc-sdk-go/service/kcm"
+	"github.com/thinry/ksc-sdk-go/service/kcm"
 )
 
 // KcmAPI provides an interface to enable mocking the

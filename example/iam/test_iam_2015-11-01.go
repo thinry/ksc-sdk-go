@@ -3,9 +3,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/ksc/ksc-sdk-go/ksc"
-	"github.com/ksc/ksc-sdk-go/ksc/utils"
-	"github.com/ksc/ksc-sdk-go/service/iam"
+
+	"github.com/thinry/ksc-sdk-go/ksc"
+	"github.com/thinry/ksc-sdk-go/ksc/utils"
+	"github.com/thinry/ksc-sdk-go/service/iam"
 )
 
 func main() {
@@ -14,7 +15,7 @@ func main() {
 	region := "cn-beijing-3"
 
 	//debug模式的话 打开这个开关
-	svc := iam.SdkNew(ksc.NewClient(ak, sk ,false), &ksc.Config{Region: &region}, &utils.UrlInfo{
+	svc := iam.SdkNew(ksc.NewClient(ak, sk, false), &ksc.Config{Region: &region}, &utils.UrlInfo{
 		UseSSL: true,
 	})
 
@@ -33,17 +34,17 @@ func main() {
 
 	//	****************************************查询用户基本信息（GetUser）***************************************************
 	/*
-	params := make(map[string]interface{})
-	params["UserName"] = "one"
+		params := make(map[string]interface{})
+		params["UserName"] = "one"
 
-	resp, err = svc.GetUser(&params)
-	if err != nil {
-		fmt.Println("error:", err.Error())
-	}
-	if resp != nil {
-		str, _ := json.Marshal(&resp)
-		fmt.Printf("%+v\n", string(str))
-	}
+		resp, err = svc.GetUser(&params)
+		if err != nil {
+			fmt.Println("error:", err.Error())
+		}
+		if resp != nil {
+			str, _ := json.Marshal(&resp)
+			fmt.Printf("%+v\n", string(str))
+		}
 	*/
 
 }
